@@ -1,0 +1,4 @@
+SELECT id, username, MAX(date) AS date FROM `user_logon` GROUP BY username
+
+Проверил на MySQL - работает.
+На SQLite этот же запрос почему-то неправильно выдал даты для Bob3 и Bob4.
